@@ -91,3 +91,50 @@ body::-webkit-scrollbar-thumb{
     opacity: 1;
   }
 }
+
+@media screen and (max-width: 991px) {
+  .rule-section{
+    width: 700px;
+    ul{
+      font-size: 14px;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .rule-section{
+    width: 500px;
+  }
+  .rules-mainly{
+    height: 160px;
+  }
+  .rules-admins{
+    height: 280px;
+  }
+  .rules-player{
+    height: 620px;
+  }
+  .rules-chat{
+    height: 250px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .rule-section{
+    width: 90%;
+    ul{
+      font-size: 12px;
+    }
+  }
+}
+@media screen and (max-width: 460px) {
+  .rule-section{
+    ul{
+      font-size: 10px;
+    }
+  }
+}
+@media screen and (max-width: 370px) {
+  .rule-section{
+    width: 98%;
+    padding-left: 2px;
+  }
+}
