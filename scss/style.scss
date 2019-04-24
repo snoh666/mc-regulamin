@@ -1,0 +1,81 @@
+$transition: all .4s ease;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #2b2b2b;
+  font-family: 'Montserrat',
+  sans-serif;
+  color: white;
+}
+.rules{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  .rule-section{
+    margin: 10px 0;
+    transition: $transition;
+  }
+}
+.rule-section{
+  width: 900px;
+  height: 40px;
+  background-color: red;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  ul{
+    width: 90%;
+    padding: 10px 0;
+    transform: scaleY(0);
+    transition: $transition;
+    transform-origin: 0 0;
+    list-style-type: decimal;
+    text-align: start;
+    opacity: 0;
+  }
+}
+.rules-mainly{
+  height: 140px;
+  ul{
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+.rules-admins{
+  height: 250px;
+  ul {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+.rules-player{
+  height: 530px;
+  ul {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+.rules-chat{
+  height: 210px;
+  ul {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+.rules-ranks{
+  height: 100px;
+  ul {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
