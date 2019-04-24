@@ -9,6 +9,7 @@ body{
   background-image: url('../jpg/bcg.png');
   background-attachment: fixed;
   background-size: cover;
+  background-position: center;
   font-family: 'Montserrat',
   sans-serif;
   color: white;
@@ -126,15 +127,28 @@ body::-webkit-scrollbar-thumb{
   }
 }
 @media screen and (max-width: 460px) {
-  .rule-section{
-    ul{
-      font-size: 10px;
-    }
+  .rules-mainly {
+    height: 200px;
+  }
+
+  .rules-admins {
+    height: 300px;
+  }
+
+  .rules-player {
+    height: 650px;
+  }
+
+  .rules-chat {
+    height: 250px;
   }
 }
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 380px) {
   .rule-section{
     width: 98%;
     padding-left: 2px;
+    ul{
+      font-size: 11px;
+    }
   }
 }
