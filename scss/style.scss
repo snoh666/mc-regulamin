@@ -49,14 +49,33 @@ body::-webkit-scrollbar-thumb{
       filter: blur(5px);
     }
   }
-  .rule-section{
-    margin: 10px 0;
-    transition: $transition;
+}
+.rules-container{
+  width: 950px;
+  height: 90vh;
+  border: 1px solid #fff;
+  border-radius: 15px 0 0 15px;
+  overflow-y: scroll;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  &::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgb(0, 0, 0);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(110, 110, 110, 0.521);
+    border-radius: 5px;
   }
 }
 .rule-section{
   width: 900px;
   height: 40px;
+  margin: 10px 0;
+  transition: $transition;
   background-color: rgba(219, 219, 219, 0.521);
   border: 1px solid rgb(41, 41, 41);
   border-radius: 8px;
@@ -113,6 +132,9 @@ body::-webkit-scrollbar-thumb{
 }
 
 @media screen and (max-width: 991px) {
+  .rules-container{
+    width: 750px;
+  }
   .rule-section{
     width: 700px;
     ul{
@@ -121,6 +143,9 @@ body::-webkit-scrollbar-thumb{
   }
 }
 @media screen and (max-width: 767px) {
+  .rules-container {
+    width: 550px;
+  }
   .rule-section{
     width: 500px;
   }
@@ -138,6 +163,12 @@ body::-webkit-scrollbar-thumb{
   }
 }
 @media screen and (max-width: 575px) {
+  .rules{
+    font-size: 15px;
+  }
+  .rules-container {
+    width: 95%;
+  }
   .rule-section{
     width: 90%;
     ul{
@@ -146,6 +177,9 @@ body::-webkit-scrollbar-thumb{
   }
 }
 @media screen and (max-width: 460px) {
+  .rules-container {
+    width: 100%;
+  }
   .rule-section{
     width: 98%;
     padding-left: 2px;
