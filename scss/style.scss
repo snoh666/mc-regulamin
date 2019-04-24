@@ -23,6 +23,10 @@ body::-webkit-scrollbar-thumb{
   background-color: rgba(110, 110, 110, 0.521);
   border-radius: 5px;
 }
+.site{
+  width: 100vw;
+  min-height: 100vh;
+}
 .rules{
   text-align: center;
   display: flex;
@@ -30,7 +34,6 @@ body::-webkit-scrollbar-thumb{
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  min-height: 100vh;
   max-height: 150vh;
   h1{
     color: white;
