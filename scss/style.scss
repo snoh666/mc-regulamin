@@ -30,6 +30,7 @@ body::-webkit-scrollbar-thumb{
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  min-height: 100vh;
   max-height: 150vh;
   h1{
     color: white;
