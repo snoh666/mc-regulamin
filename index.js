@@ -1,5 +1,10 @@
 window.addEventListener('load', () => {
 
+  document.getElementsByClassName('shop-btn')[0].addEventListener('click', () => {
+
+    window.location = 'http://eghard.pl/sklep.php?serwer=1#';
+
+  });
   const rulesSections = document.getElementsByClassName('rule-section');
 
   const rulesSectionsClasses = ['rules-mainly', 'rules-admins', 'rules-player', 'rules-chat', 'rules-ranks'];
