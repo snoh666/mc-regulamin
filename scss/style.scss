@@ -57,10 +57,7 @@ body::-webkit-scrollbar-thumb{
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
-}
-.header-title{
-  height: 50px;
+  justify-content: center;
 }
 .shop-btn {
   width: 200px;
@@ -68,6 +65,7 @@ body::-webkit-scrollbar-thumb{
   display: block;
   position: relative;
   background: none;
+  margin-right: 20px;
   border: 1px solid #fff;
   border-radius: 10px 5px;
   color: white;
@@ -211,6 +209,9 @@ body::-webkit-scrollbar-thumb{
 @media screen and (max-width: 575px) {
   .rules{
     font-size: 15px;
+    h1{
+      font-size: 20px;
+    }
   }
   .rules-container {
     width: 95%;
@@ -225,6 +226,13 @@ body::-webkit-scrollbar-thumb{
 @media screen and (max-width: 460px) {
   .rules-container {
     width: 100%;
+  }
+  .shop-btn {
+    width: 150px;
+
+    &::before {
+      width: 170px;
+    }
   }
   .rule-section{
     width: 98%;
@@ -244,6 +252,17 @@ body::-webkit-scrollbar-thumb{
   }
 }
 @media screen and (max-width: 380px) {
+  .rules{
+    h1{
+      font-size: 18px;
+    }
+  }
+  .shop-btn {
+    width: 100px;
+    &::before {
+      width: 120px;
+    }
+  }
   .rules-mainly {
     height: 200px;
   }
